@@ -14,7 +14,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     text-align: center;
-    max-width: 300px;
+    max-width: 400px;
     position: relative; 
     z-index: 1;
 }
@@ -47,7 +47,6 @@ body {
 }
 
 .btn-desafio {
-    background-color: #28a745; 
     color: white;
     border: none;
     padding: 8px 15px;
@@ -56,11 +55,23 @@ body {
     font-size: 0.8em;
     font-family: 'Montserrat', sans-serif; 
     transition: 0.3s;
+    font-weight: bold;
 }
 
-.btn-desafio:hover {
-    background-color: #218838;
-    transform: translateY(-2px); 
+.btn-1st {
+    background-color: #17a2b8;
+}
+.btn-1st:hover {
+    background-color: #138496;
+    transform: translateY(-2px);
+}
+
+.btn-2nd {
+    background-color: #6f42c1;
+}
+.btn-2nd:hover {
+    background-color: #5a32a3;
+    transform: translateY(-2px);
 }
 
 #btnSaudar {
@@ -84,12 +95,57 @@ body {
 }
 
 @keyframes shake {
-    10%, 90% { transform: translate3d(-2px, 0, 0); }
-    20%, 80% { transform: translate3d(4px, 0, 0); }
-    30%, 50%, 70% { transform: translate3d(-6px, 0, 0); }
-    40%, 60% { transform: translate3d(6px, 0, 0); }
+    10%, 90% { transform: translate3d(-4px, 0, 0); }
+    20%, 80% { transform: translate3d(6px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-8px, 0, 0); }
+    40%, 60% { transform: translate3d(8px, 0, 0); }
 }
 
-.erro-shake {
-    animation: shake 0.3s ease-in-out !important;
+.texto-animado {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #555;
+    font-weight: 600;
+    min-height: 1.2em;
+}
+
+.texto-animado span {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #007bff;
+    width: 0;
+}
+
+.cursor-piscando {
+    animation: cursor 0.8s infinite;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.badge-versao {
+    font-size: 0.4em; /* Bem menor que o nome */
+    background-color: #007bff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    font-weight: 400;
 }
