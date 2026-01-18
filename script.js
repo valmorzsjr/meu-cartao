@@ -51,7 +51,7 @@ document.getElementById('btnSaudar').onclick = () => {
     if (logicaOk && mathOk) {
         alert('Well done! You beat the challenges. +55 51 98566-5255');
     } else {
-        alert('Access Denied! Solve the 1st and 2nd Challenges to unlock my email.');
+        alert('Access Denied! Solve the 1st and 2nd Challenges to unlock my phone.');
     }
 };
 
