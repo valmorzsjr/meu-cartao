@@ -1,15 +1,13 @@
-/* 1. Configuração do Corpo da Página */
 body {
     margin: 0;
     display: flex;
-    justify-content: center;   /* Centraliza horizontalmente */
-    align-items: center;       /* Centraliza verticalmente */
-    min-height: 100vh;         /* Ocupa a altura toda da tela */
+    justify-content: center;   
+    align-items: center;       
+    min-height: 100vh;         
     background-color: #f0f2f5; 
-    font-family: 'Montserrat', sans-serif; /* Agora a Montserrat vai funcionar! */
+    font-family: 'Montserrat', sans-serif; 
 }
 
-/* 2. Estilo do Cartão */
 .cartao {
     background-color: white;
     padding: 30px;
@@ -19,7 +17,7 @@ body {
     max-width: 300px;
 }
 
-/* 3. Ajuste da Imagem */
+
 .cartao img {
     width: 120px;
     height: 120px;
@@ -29,7 +27,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* 4. Estilo dos Links */
+
 .links a {
     display: inline-block;
     margin: 10px;
@@ -38,7 +36,31 @@ body {
     font-weight: bold;
 }
 
-/* 5. Estilo do Botão */
+.desafios {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+}
+
+.btn-desafio {
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-family: 'Montserrat', sans-serif; 
+    transition: 0.3s;
+}
+
+.btn-desafio:hover {
+    background-color: #218838;
+    transform: translateY(-2px); 
+}
+
 #btnSaudar {
     margin-top: 20px;
     padding: 10px 20px;
